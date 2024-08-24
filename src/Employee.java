@@ -1,7 +1,7 @@
 public class Employee {
     private static int counter = 1; // Статический счетчик для id
     private final int id; // Уникальный идентификатор сотрудника
-    private String fullName; // ФИО сотрудника
+    private final String fullName; // ФИО сотрудника
     private int department; // Отдел (1-5)
     private double salary; // Зарплата
 
@@ -56,8 +56,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
+        return "id=" + id +
                 ", fullName='" + fullName + '\'' +
                 ", department=" + department +
                 ", salary=" + salary +
